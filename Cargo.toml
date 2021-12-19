@@ -13,6 +13,9 @@ path = "src/lib.rs"
 name = "advent_of_code_solver"
 path = "src/main.rs"
 
+[toolchain]
+channel = "nightly"
+
 [dependencies]
 itertools = "0.10.3"
 
