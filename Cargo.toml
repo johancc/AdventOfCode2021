@@ -14,10 +14,11 @@ name = "advent_of_code_solver"
 path = "src/main.rs"
 
 [dependencies]
+itertools = "0.10.3"
 
 [dev-dependencies]
 criterion = "0.3"
 
 [[bench]]
-name = "day01"
+name = "main"
 harness = false
