@@ -19,5 +19,11 @@ pub fn day_03(c: &mut Criterion) {
     c.bench_function("Day 3, Solution B", |b| b.iter(|| solver.part_b()));
 }
 
-criterion_group!(benches, day_01, day_02, day_03);
+pub fn day_04(c: &mut Criterion) {
+    let solver = solutions::day04::Day04 {};
+    c.bench_function("Day 4, Solution A", |b| b.iter(|| solver.part_a()));
+    c.bench_function("Day 4, Solution B", |b| b.iter(|| solver.part_b()));
+}
+
+criterion_group!(benches, day_01, day_02, day_03, day_04);
 criterion_main!(benches);
